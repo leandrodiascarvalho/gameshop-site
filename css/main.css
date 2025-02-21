@@ -1,0 +1,224 @@
+:root {
+    --cor-primaria: #182c61;
+    --cor-secundaria: #ecf0f1;
+    --cor-terciaria: #000000;
+    --cor-hover-botao: #314e9e;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  header,
+  section h2,
+  section h3,
+  form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+  }
+  
+  body,
+  input,
+  textarea {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    padding: 16px 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+  }
+  
+  header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  
+  header nav li a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+  }
+  
+  header nav li a:hover {
+    color: var(--cor-terciaria);
+  }
+  
+  .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header .container,
+  section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .brands-list img {
+    height: 24px;
+  }
+  
+  .brands-list li {
+    display: inline;
+    margin-right: 8px;
+  }
+  
+  section .container {
+    align-items: flex-start;
+  }
+  
+  section {
+    padding: 24px 0;
+    color: var(--cor-primaria);
+  }
+  
+  section h2 {
+    margin-bottom: 16px;
+  }
+  
+  section p {
+    margin-bottom: 8px;
+  }
+  
+  .store-front {
+    margin-right: 32px;
+  }
+  
+  .social-links img {
+    height: 24px;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin-right: 8px;
+  }
+  
+  .social-links li a {
+    text-decoration: none;
+  }
+  
+  #contact .container {
+    display: block;
+  }
+  
+  .contact-methods {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+  
+  form textarea {
+    resize: none;
+    height: 180px;
+  }
+  
+  section h3 {
+    margin-bottom: 16px;
+  }
+  
+  form button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: var(--cor-hover-botao);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline-color: var(--cor-primaria);
+  }
+  
+  footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 16px 0;
+  }
+  
+  footer .container p {
+    text-align: center;
+  }
+  
+ /* Estilos para telas menores (celulares) */
+@media (max-width: 767px) {
+    .container {
+      width: 90%;
+    }
+  
+    header .container,
+    section .container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    header nav ul {
+      padding: 0;
+    }
+  
+    header nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .store-front {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  
+    .contact-methods {
+      flex-direction: column;
+    }
+  
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+    }
+  
+    section .container > div {
+      width: 100%;
+    }
+  }
+  
+  /* Estilos para tablets */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      width: 90%;
+    }
+  
+    .contact-methods {
+      flex-direction: column;
+    }
+  
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+    }
+  
+    .store-front {
+      margin-right: 20px;
+    }
+  }
+  
+  /* Estilos para desktops grandes */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1280px;
+    }
+  }
