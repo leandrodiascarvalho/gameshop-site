@@ -1,101 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Shop - A sua loja de games</title>
+    <title>Actions Shop e Games</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monomakh&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Games Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <h1>Action Figure Fairy Tail</h1>
     </header>
-    <section id="about">
-        <div class="container">
-            <img class="store-front" src="./img/loja.jpg" alt="Fachada da loja Games Shop" />
-            <div>
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet delectus, ipsum aspernatur excepturi quis illo. Et, aut, unde quod, quisquam fugiat porro rerum dolore nihil laudantium voluptates asperiores vitae veniam.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati possimus omnis, sunt velit reprehenderit sequi asperiores magnam quia sed ex odit, quisquam ipsum molestiae. Laborum natus adipisci facere aliquam!
-                </p>
-                <ul class="brands-list">
-                    <li><img src="./img/nintendo.png" alt="Nintendo" /></li>
-                    <li><img src="./img/xbox.png" alt="Xbox" /></li>
-                    <li><img src="./img/playstation.png" alt="Playstation" /></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required />
-                        <input type="email" placeholder="Seu e-mail" required />
-                        <input type="tel" placeholder="Seu telefone (opcional)" />
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="./img/instagram.png" alt="Logo do Instagram" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="./img/facebook.png" alt="Logo do Facebook" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal no Youtube">
-                                <img src="./img/youtube.png" alt="Logo do Youtube" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScript n° 124, Vila HTML - São Paulo - SP
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <main class="content">
+        <section class="row">
+            <article class="card">
+                <h2>Natsu Dragneel </h2>
+                <p> Mago Dragon Slayer do Fogo</p>
+                <img src="img/natsu.png" alt="Action Figure do Natsu da Fairy Tail" title="Natsu Dragneel - Mago Dragon Slayer do Fogo">
+            </article>
+            <article class="card">
+                <h2>Lucy Heartfilia</h2>
+                <p> Maga Celestial</p>
+                <img src="img/lucy.png" alt="Action Figure do Lucy da Fairy Tail" title="Lucy Heartfilia - Maga Celestial">
+            </article>
+            <article class="card">
+                <h2>Happy</h2>
+                <p> Exceed (espécie mágica)</p>
+                <img src="img/happy.png" alt="Action Figure do Happy da Fairy Tail" title="Happy - Exceed">
+            </article>
+        </section>
+
+        <section class="row">
+            <article class="card">
+                <h2>Gray Fullbuster</h2>
+                <p>Mago Ice-Make</p>
+                
+                <img src="img/gray.png" alt="Action Figure do Gray da Fairy Tail" title="Gray Fullbuster - Mago Ice-Make">
+            </article>
+            <article class="card">
+                <h2>Erza Scarlet</h2>
+                <p>Maga Reequipada .</p>
+                
+                <img src="img/erza.png" alt="Action Figure do Erza da Fairy Tail" title="Erza Scarlet - Maga Reequipada">
+            </article>
+            <article class="card">
+                <h2>Juvial Lockser </h2>
+                <p>Maga da Água</p>
+                <img src="img/juvial.png" alt="Action Figure do Juvial da Fairy Tail" title="Juvia Lockser - Maga da Água">
+            </article>
+        </section>
+
+        <section class="order-form">
+            <h2>Faça seu pedido</h2>
+            <form id="orderForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="product">Produto:</label>
+                <select id="product" name="product" required>
+                    <option value="">Selecione um produto</option>
+                    <option value="produto1">Natsu</option>
+                    <option value="produto2">Erza</option>
+                    <option value="produto3">Lucy</option>
+                    <option value="produto4">Juvia</option>
+                    <option value="produto5">Gray</option>
+                </select><br><br>
+
+                <input type="submit" value="Enviar Pedido">
+            </form>
+        </section>
+    </main>
+
     <footer>
-        <div class="container">
-            <p>
-                &copy; Games Shop - Todos os direitos reservados - 2022
-            </p>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <img src="img/facebook.png" alt="Logo do Facebook">
+            </a>
+            <a href="#" target="_blank">
+                <img src="img/instagram.png" alt="Logo do Instagram">
+            </a>
+            <a href="#" target="_blank">
+                <img src="img/youtube.png" alt="Logo do Youtube">
+            </a>
         </div>
+        <p>&copy; 2025 Leandro Dias de Carvalho. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
