@@ -1,0 +1,37 @@
+{
+  "name": "gameshop-site",
+  "version": "1.0.0",
+  "description": "Projeto de uma lading page de uma loja de jogos utilizando HTML, CSS e Responsividade. Foi realizado no curso Programador Full Stack Java da Ebac.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt",
+    "start": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrodiascarvalho/gameshop-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/leandrodiascarvalho/gameshop-site/issues"
+  },
+  "homepage": "https://github.com/leandrodiascarvalho/gameshop-site#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-sass": "^4.0.0",
+    "parcel": "^2.15.4",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "jquery": "^3.7.1"
+  }
+}
